@@ -1,0 +1,7 @@
+/vendor
+/node_modules
+/img/user_avatars
+Homestead.yaml
+Homestead.json
+.env
+.idea

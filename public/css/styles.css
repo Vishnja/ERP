@@ -1,0 +1,181 @@
+/* Common styles */
+button { outline: none !important; }
+.btn-circle, .btn.btn-circle {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.product-num-spinner {
+    padding: 0px !important;
+    min-width: 40px !important;
+    text-align: center;
+}
+.tab-pane { padding-top: 12px; }
+
+.crossed { position: relative; }
+.crossed::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 50%;
+    border-bottom: 1px solid black;
+}
+
+/* Bootstrap Modal fix */
+.modal .loading-mask { z-index: 100; }
+
+/* DataTables */
+table.dataTable thead > tr > th.sorting_disabled { padding-right: 0; }
+
+/* Popup */
+.select2-container { width: 100% !important; }
+.select2-container--open { z-index: 2000; }
+.b-modal.modal { background-color: white; }
+.modal-footer-actions { margin-right: 8px; }
+
+/* Datepicker fix */
+#ui-datepicker-div { z-index: 1100 !important; }
+
+/* Login, Password Reset */
+.icheckbox_square-blue {
+    float: left;
+}
+.icheckbox_caption {
+    float: left;
+    margin-left: 4px;
+    margin-top: 1px;
+}
+.form-password-reset .submit-wrap {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.form-password-reset .submit-wrap button {
+    display: inline-block;
+    width: auto;
+}
+
+/* Order */
+#order .btn-buyer-create, #order .btn-buyer-edit {
+    margin-top: -6px;
+}
+#order .product-price {
+    width: 50px;
+}
+#order .action-product-edit {
+    cursor: pointer;
+}
+    /* order and purchase/return num spinner */
+#order .bootstrap-touchspin,
+#purchase .bootstrap-touchspin,
+#return .bootstrap-touchspin {
+    width: 60px;
+}
+#order .product-num-spinner,
+#purchase .product-num-spinner,
+#return .product-num-spinner {
+    height: 26px;
+}
+#order .bootstrap-touchspin .input-group-btn-vertical > .btn,
+#purchase .bootstrap-touchspin .input-group-btn-vertical > .btn,
+#return .bootstrap-touchspin .input-group-btn-vertical > .btn {
+    padding: 6px 10px;
+}
+#order .bootstrap-touchspin .input-group-btn-vertical i,
+#purchase .bootstrap-touchspin .input-group-btn-vertical i,
+#return .bootstrap-touchspin .input-group-btn-vertical i {
+    top: 1px;
+}
+#order .bootstrap-touchspin .input-group-btn-vertical .bootstrap-touchspin-down i,
+#purchase .bootstrap-touchspin .input-group-btn-vertical .bootstrap-touchspin-down i,
+#return .bootstrap-touchspin .input-group-btn-vertical .bootstrap-touchspin-down i {
+    top: 2px;
+}
+
+/* Order and Purchase statuses */
+tr.order-status-open, tr.purchase-status-open
+{ font-weight: bold; }
+tr.order-status-cancelled td, tr.order-status-return td,
+tr.purchase-status-cancelled td, tr.purchase-status-return td
+{ text-decoration: line-through; color: rosybrown; }
+#orders-table tbody tr td:nth-child(10),
+#purchases-table tbody tr td:nth-child(9)
+{ text-decoration: none; }
+tr.order-status-fulfilled,
+tr.purchase-status-fulfilled
+{ font-style: italic; color: green; }
+
+/* Order Products */
+.discount-group input { width: 60% !important;}
+.discount-group select { width: 40% !important;}
+
+/* #history-tab */
+.history-type-tab {
+    padding-top: 12px;
+    max-height: 600px;
+    overflow-y: scroll;
+}
+.history-type-tab p {
+    font-weight: bold;
+    text-decoration: underline;
+}
+.history-type-tab table {
+    width: calc(100% - 14px);
+    margin: 12px 0 12px 14px;
+}
+.history-type-tab.history-type-tab-fullwidth-table table {
+    width: 100%;
+    margin: 12px 0 0 0;
+}
+.history-type-tab table, .history-type-tab th, .history-type-tab td {
+    border: 1px solid #d0d0d0;
+}
+
+/* Purchases */
+
+
+/* Money */
+tr.money-type-income td:nth-child(2) { color: green; }
+tr.money-type-expense td:nth-child(2) { color: rosybrown; }
+tr.money-status-cancelled td { text-decoration: line-through; }
+body.money-index #items-table tbody tr td:nth-child(9)
+{ text-decoration: none; }
+
+/* Users */
+.dropzone {
+    width: 200px;
+    min-height: 200px;
+    border-radius: 5px;
+    border: 1px solid #d2d6de;
+}
+.dropzone .dz-message {
+    text-align: center;
+    margin: 4em 0;
+}
+.dropzone .dz-preview.dz-image-preview .dz-details {
+    display: none;
+}
+.dropzone .dz-preview:hover .dz-image img {
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+    -webkit-filter: none;
+    filter: none;
+}
+.user-panel > .info {
+    padding: 15px 0px 0px 10px;
+}
+.user-panel > .info p {
+    font-weight: normal;
+}
+
+/* Roles */
+.roles-index .capabilities-wrap {
+    max-height: 400px;
+    overflow-y: scroll;
+}
+
